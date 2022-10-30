@@ -10,8 +10,6 @@ const MODAL_STYLES = {
     transform: 'translate(-50%, -50%)',
     backgroundColor: '#FFF',
     padding: '5vmin',
-    //height: '50vmin',
-    //width: '40vmin',
     borderRadius: '2vmin',
     fontSize: '2.5vmin',
     zIndex: 1000
@@ -33,14 +31,7 @@ export default function EditVehicle({ allVehicles, editIndex, onClose }) {
     const [inputs, setInputs] = useState(allVehicles[editIndex]);
     const [file, setFile] = useState();
 
-    /*     function onImageChange(e) {
-            //setImages([...e.target.files]);
-            setFile(URL.createObjectURL(e.target.files[0]));
-            //setInputs(values => ({ ...values, ["vehicleImageSrc"]: e.target.files[0].name }))
-            //setInputs(values => ({ ...values, ["vehicleImageSrc"]: URL.createObjectURL(e.target.files[0]) }))
-            //console.log(e.target.files[0].name)
-            //console.log(inputs)
-        } */
+
 
     return ReactDom.createPortal(
         <>

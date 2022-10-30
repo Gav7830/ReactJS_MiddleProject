@@ -1,3 +1,5 @@
+import Utilities from "./Utilities";
+
 const AboutUs = () => {
   return <div className="aboutUsMainContainer">
 
@@ -12,8 +14,8 @@ const AboutUs = () => {
     </div>
 
     <div className="aboutUsLeftContainer">
+    <img src={Utilities.ImagesUrl + 'aboutCar.PNG'}/>
      
-      <img src='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/aboutCar.PNG'/>
 
     </div>
     <div className="aboutUsMiddleContainer">

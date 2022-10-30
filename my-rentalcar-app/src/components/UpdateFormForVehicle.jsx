@@ -39,7 +39,7 @@ const UpdateFormForVehicle = ({ mode, args }) => {
         }
         buttons =
             <div>
-                <input type="image" id="saveButton" src="https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/save.png" alt="Submit" />
+                <input type="image" id="saveButton" img src={Utilities.ImagesUrl + 'save.png'} alt="Submit" />
                 <img src="https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/delete.png" id="deleteButton" onClick={onDelete}></img>
                 <img src="https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/cancel.png" id="cancelButton" onClick={onClose}></img>
             </div>
@@ -159,13 +159,6 @@ const UpdateFormForVehicle = ({ mode, args }) => {
                                 </select>
                             </td>
                         </tr>
-                        {/*           <tr><td>
-              <input type="file" name="vehicleImageSrc"
-                value={inputs.vehicleImageSrc}
-                required
-                onChange={onImageChange} />
-            </td></tr>
-            <tr><td><img src={file} /></td></tr> */}
                         <tr>
                             <td><label>Image </label></td>
                             <td>
@@ -175,13 +168,15 @@ const UpdateFormForVehicle = ({ mode, args }) => {
                                     value={inputs.vehicleImageSrc || ""}
                                     onChange={handleChange}>
                                     <option value=""></option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/BMW.jpg'>BMW</option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/Audi.jpg'>Audi</option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/Mazda.jpg'>Mazda</option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/Porsche.jpg'>Porsche</option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/Toyota.jpg'>Toyota</option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/Tesla.jpg'>Tesla</option>
-                                    <option value='https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/Mercedes.jpg'>Mercedes</option>
+
+                                    <option value={Utilities.ImagesUrl + 'Audi.jpg'}>BMW</option>
+                                    <option value={Utilities.ImagesUrl + 'Mazda.jpg'}>Audi</option>
+                                    <option value={Utilities.ImagesUrl + 'Porsche.jpg'}>Porsche</option>
+                                    <option value={Utilities.ImagesUrl + 'Toyota.jpg'}>Toyota</option>
+                                    <option value={Utilities.ImagesUrl + 'Tesla.jpg'}>Tesla</option>
+                                    <option value={Utilities.ImagesUrl + 'Mercedes.jpg'}>Mercedes</option>
+
+
 
                                 </select>
                             </td>
