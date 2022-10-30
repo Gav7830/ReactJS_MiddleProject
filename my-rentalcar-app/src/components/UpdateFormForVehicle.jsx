@@ -39,9 +39,9 @@ const UpdateFormForVehicle = ({ mode, args }) => {
         }
         buttons =
             <div>
-                <input type="image" id="saveButton" img src={Utilities.ImagesUrl + 'save.png'} alt="Submit" />
-                <img src="https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/delete.png" id="deleteButton" onClick={onDelete}></img>
-                <img src="https://raw.githubusercontent.com/Gav7830/ReactJS_MiddleProject/main/Pictures/cancel.png" id="cancelButton" onClick={onClose}></img>
+                <input type="image" id="saveButton" src={Utilities.ImagesUrl + 'save.png'} alt="Submit" />
+                <img src={Utilities.ImagesUrl + 'delete.png'} id="deleteButton" onClick={onDelete}></img>
+                <img src={Utilities.ImagesUrl + 'cancel.png'} id="cancelButton" onClick={onClose}></img>
             </div>
         startState = allVehicles[editIndex];
         onSubmit = (e) => {
